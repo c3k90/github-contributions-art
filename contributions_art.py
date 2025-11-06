@@ -468,10 +468,8 @@ class GitHubContributionsArt:
             # Start from 52 weeks ago, on a Sunday
             today = datetime.now()
             start_date = today - timedelta(weeks=52)
-            # Adjust to previous Sunday
-            start_date = start_date - timedelta(days=start_date.weekday() + 1)
-            if start_date.weekday() != 6:  # If not Sunday
-                start_date = start_date - timedelta(days=(start_date.weekday() + 1) % 7)
+            # Adjust to previous Sunday (weekday 6)
+            start_date = start_date - timedelta(days=(start_date.weekday() + 1) % 7)
         
         print(f"Generating contributions starting from {start_date.strftime('%Y-%m-%d')}...")
         print(f"Text: '{self.text}'")

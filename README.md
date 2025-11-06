@@ -1,6 +1,6 @@
 # GitHub Contributions Art
 
-Een Python-script dat tekst genereert op de GitHub-contributiegraph door commits te maken op specifieke data.
+Een Python script dat tekst genereert op de GitHub-contributiegraph door commits te maken op specifieke data.
 
 ## Beschrijving
 
